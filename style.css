@@ -1,0 +1,102 @@
+* { box-sizing: border-box; }
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  color: #222;
+  background: linear-gradient(to bottom, #3ec0a4, #2b7a78);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Header */
+.site-header { padding: 20px 10px 10px; text-align: center; background: transparent; color: #fff; }
+.logo-centered { width: 140px; display: block; margin: 0 auto; }
+.site-title { margin: 10px 0 5px; color: white; font-size: 28px; }
+
+/* Nav */
+.main-nav ul { list-style: none; padding: 0; margin: 8px 0 20px; }
+.main-nav li { display: inline-block; margin: 0 10px; }
+.main-nav a { color: white; text-decoration: none; font-weight: bold; }
+
+/* Portada */
+.portada { min-height: 40vh; display: flex; align-items: center; justify-content: center; padding: 30px 10px; }
+.portada-inner { background: rgba(255,255,255,0.06); padding: 20px; border-radius: 12px; color: #fff; }
+.portada h2 { margin: 0 0 8px; }
+
+/* Main */
+main { padding: 20px; background: #f5f8fa; border-top-left-radius: 20px; border-top-right-radius: 20px; margin-top: -30px; }
+.contenedor { max-width: 1000px; margin: 0 auto 30px; padding: 20px; background: transparent; }
+.materia { background: #fff; border-radius: 10px; padding: 15px; margin: 12px 0; box-shadow: 0 6px 18px rgba(0,0,0,0.06); }
+.materia h3 { margin: 0 0 8px; }
+
+/* Buttons */
+.boton { background-color: #ff9800; color: white; padding: 10px 14px; margin: 6px 6px 6px 0; text-decoration: none; border-radius: 8px; font-weight: bold; display: inline-block; }
+.boton:hover { transform: translateY(-3px); transition: 0.2s; }
+
+/* Form */
+form { display: flex; flex-direction: column; max-width: 500px; margin: 0 auto; }
+form input, form textarea { margin: 6px 0; padding: 10px; border-radius: 6px; border: 1px solid #ddd; }
+
+/* Footer */
+footer { text-align: center; padding: 18px; color: white; background: rgba(0,0,0,0.08); }
+.whatsapp { position: fixed; right: 18px; bottom: 18px; background: #25D366; color: white; width: 54px; height: 54px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 22px; text-decoration: none; box-shadow: 0 6px 18px rgba(0,0,0,0.2); }
+
+/* Fade-in animation */
+.fadein { opacity: 0; transform: translateY(6px); animation: fadeInUp 0.8s ease forwards; }
+.fadein:nth-child(1) { animation-delay: 0.15s; }
+.fadein:nth-child(2) { animation-delay: 0.3s; }
+.fadein:nth-child(3) { animation-delay: 0.45s; }
+
+@keyframes fadeInUp { to { opacity: 1; transform: translateY(0); } }
+
+/* Responsive */
+@media (max-width: 600px) {
+  .main-nav li { display: block; margin: 6px 0; }
+  .site-title { font-size: 22px; }
+  .logo-centered { width: 100px; }
+}
+/* 🔥 Efecto hover para botones y enlaces de PDF (mejorado para botones de color) */
+a:hover, button:hover {
+  transform: scale(1.05);
+  background-color: #ffb300; /* un tono más claro del naranja */
+  color: #ffffff;
+  box-shadow: 0 0 12px rgba(255, 179, 0, 0.7);
+  transition: all 0.3s ease;
+}
+/* ✨ Frase inspiradora debajo del título */
+.frase {
+  font-size: 1.3em;
+  color: #ffffff;
+  text-align: center;
+  margin-top: -10px;
+  margin-bottom: 30px;
+  font-style: italic;
+  animation: fadeIn 1.5s ease-in;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3);
+}
+html {
+  scroll-behavior: smooth;
+}
+/* 🔝 Estilo del botón Volver Arriba */
+#btnSubir {
+  display: none;
+  position: fixed;
+  bottom: 25px; /* misma altura que WhatsApp */
+  right: 85px; /* movido un poco a la izquierda */
+  z-index: 99;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  background-color: #25D366; /* Verde WhatsApp */
+  color: white;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+/* Efecto hover */
+#btnSubir:hover {
+  background-color: #1ebe5d;
+  transform: scale(1.1);
+}

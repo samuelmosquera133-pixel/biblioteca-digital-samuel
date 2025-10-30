@@ -1,0 +1,19 @@
+Biblioteca Digital
+Desarrollado por: Samuel Mosquera
+Año: 2025
+
+Proyecto educativo creado para facilitar el acceso a materiales escolares.
+
+Contenido del paquete:
+- index.html -> Página principal
+- style.css -> Estilos
+- /img -> Logo
+- /libros -> PDFs de las materias
+- README.txt -> Esta guía
+
+Cómo abrir:
+1. Extrae la carpeta Biblioteca_Digital_Final.zip
+2. Abre index.html en tu navegador (Chrome recomendado)
+3. Si algo no carga, revisa que los archivos en /img y /libros estén presentes
+
+Contacto: WhatsApp 310 556 3162
